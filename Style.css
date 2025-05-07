@@ -1,0 +1,82 @@
+/* Reset minimal */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  color: #222;
+  background: #f7f7f7;
+}
+
+.sidebar {
+  background: #ffffff;
+  width: 220px;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+  max-width: 1000px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background: #e6f0ff;
+}
