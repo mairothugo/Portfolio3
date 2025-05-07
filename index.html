@@ -1,103 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Nanum+Pen+Script&display=swap">
-  <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <title>Hugo | Portfolio</title>
+  <title>Portfolio Hugo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="headerBg wrapper">
-    <nav role="navigation">
-      <div class="menu-toggle"><span>Menu</span></div>
-      <ul class="menu">
-        <li><a href="#projects" class="link"><span>Projects</span></a></li>
-        <li><a href="#aboutMe" class="link"><span>About Me</span></a></li>
-        <li><a href="#contact" class="link"><span>Contact</span></a></li>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <header data-aos="fade-up" data-aos-once="true">
-      <div class="headerText">
-        <h1>Hello! <span>I'm Hugo. 👋</span></h1>
-        <p>
-          Data analyst & problem solver, passionate about finding insights and telling stories with data. 📊📈
-        </p>
-      </div>
-      <div class="imageContainer">
-        <img src="assets/avatar.png" alt="Portrait of Hugo" />
-      </div>
-      <p class="scrollDownText"><i class="fas fa-angle-down"></i></p>
-    </header>
-  </div>
+  </header>
 
-  <main>
-    <!-- Projects section -->
-    <section class="portfolioProjects" id="projects" data-aos="fade-up" data-aos-once="true">
-      <!-- Template for project items -->
-      <!-- Add your projects here following the format -->
-    </section>
+  <section id="a-propos" class="hero">
+    <img src="assets/hugo.jpg" alt="Photo de Hugo" class="photo-profil" />
+    <h1>Hugo – Data Analyst</h1>
+    <p>Passionné par la data, je transforme les données en décisions intelligentes.</p>
+  </section>
 
-    <!-- About Me section -->
-    <section class="aboutMe" id="aboutMe">
-      <div class="wrapper" data-aos="fade-up" data-aos-once="true">
-        <div class="aboutMeTop">
-          <div class="aboutMeBio">
-            <h2>About Me 📌</h2>
-            <p>
-              Hello again! I'm Hugo, a curious data analyst who loves exploring numbers to support decision-making. 🚀
-            </p>
-            <p>
-              Outside of work, I enjoy design, hiking and making scripts more efficient. Got a challenge for me?
-              Let's talk!
-            </p>
-          </div>
-          <div class="aboutMeImage">
-            <img src="assets/aboutMe.jpg" alt="About Hugo" />
-          </div>
-        </div>
-        <div data-aos="fade-up" data-aos-once="true">
-          <h2>My Toolkit 🧰</h2>
-          <ul class="skills">
-            <li><img src="assets/icons/python.svg" alt="Python" />Python</li>
-            <li><img src="assets/icons/sql.svg" alt="SQL" />SQL</li>
-            <li><img src="assets/icons/powerbi.svg" alt="Power BI" />Power BI</li>
-            <li><img src="assets/icons/excel.svg" alt="Excel" />Excel</li>
-            <li><img src="assets/icons/git.svg" alt="Git" />Git</li>
-            <li><img src="assets/icons/html.svg" alt="HTML" />HTML</li>
-            <li><img src="assets/icons/css.svg" alt="CSS" />CSS</li>
-            <li><img src="assets/icons/javascript.svg" alt="JavaScript" />JavaScript</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Contact section -->
-  <section class="contact" data-aos="fade-up" data-aos-once="true" id="contact">
-    <div class="contactContainer wrapper">
-      <div class="contactInformation">
-        <h2>Let's Connect! 📬</h2>
-        <p>
-          Curious about data, dashboards or grabbing coffee? Contact me below 👇
-        </p>
-        <ul class="socialIcons">
-          <li><a href="https://www.linkedin.com/in/hugo"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/hugo"><i class="fab fa-github"></i></a></li>
-        </ul>
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <div class="grid-projets">
+      <!-- À remplir avec des projets cliquables -->
+      <div class="carte-projet">
+        <h3>Analyse B2B Sell-In</h3>
+        <p>Classification et prédiction de commandes.</p>
+        <a href="#">Voir plus</a>
       </div>
     </div>
   </section>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+  <section id="certifications">
+    <h2>Certifications & Diplômes</h2>
+    <ul>
+      <li>Master Data Science – Université XYZ</li>
+      <li>Certification Power BI – Microsoft</li>
+    </ul>
+  </section>
 
+  <section id="contact">
+    <h2>Me contacter</h2>
+    <p>Retrouvez-moi sur <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Hugo - Tous droits réservés.</p>
+  </footer>
+</body>
 </html>
