@@ -1,91 +1,69 @@
 body {
-  display: flex;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5fdf7; /* vert très clair */
+  background-color: #fdfdfd;
   color: #333;
 }
 
-.sidebar {
-  background: #ffffff;
-  width: 220px;
-  padding: 30px 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
-  position: fixed;
-  height: 100%;
-  border-right: 1px solid #e0e0e0;
+header {
+  background-color: #ffffff;
+  padding: 1em 0;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
 }
 
-.sidebar h1 {
-  font-size: 1.8em;
-  color: #2e7d32; /* vert pro */
-  margin-bottom: 30px;
-}
-
-.sidebar ul {
+nav ul {
   list-style: none;
   padding: 0;
-}
-
-.sidebar ul li {
-  margin: 15px 0;
-}
-
-.sidebar a {
-  color: #2e7d32;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.main-content {
-  margin-left: 240px;
-  padding: 40px;
-  max-width: 1000px;
-}
-
-.section {
-  margin-bottom: 60px;
-}
-
-.profile-pic {
-  width: 150px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-  border: 3px solid #a5d6a7;
-}
-
-.projects {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.project-card {
-  padding: 20px;
-  background: #ffffff;
-  border-left: 6px solid #66bb6a;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+nav a {
   text-decoration: none;
-  color: inherit;
-  transition: background 0.2s, transform 0.2s;
+  color: #0077b6;
+  font-weight: bold;
 }
 
-.project-card:hover {
-  background: #e8f5e9;
-  transform: scale(1.01);
+.hero {
+  text-align: center;
+  padding: 3em 1em;
 }
 
-ul {
-  padding-left: 20px;
+.photo-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077b6;
+  margin-bottom: 1em;
 }
 
-h2 {
-  color: #388e3c;
-  margin-bottom: 10px;
+h1, h2 {
+  color: #023e8a;
+}
+
+.grid-projets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1em;
+  justify-content: center;
+}
+
+.carte-projet {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1em;
+  width: 250px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #f1f1f1;
+  margin-top: 3em;
 }
